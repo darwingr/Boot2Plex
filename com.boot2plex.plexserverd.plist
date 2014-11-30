@@ -12,7 +12,7 @@
 		<false/>
 	</dict>
 	<key>Label</key>
-	<string>com.groskleg.plexserverd</string>
+	<string>com.boot2plex.plexserverd</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/Applications/Plex Media Server.app/Contents/MacOS/Plex Media Server</string>
@@ -29,9 +29,9 @@
 		</array>
 	</dict>
 	<key>StandardErrorPath</key>
-	<string>/var/log/services/daemons/com.groskleg.plexserverd.err</string>
+	<string>/var/log/services/daemons/com.boot2plex.plexserverd.err</string>
 	<key>StandardOutPath</key>
-	<string>/var/log/services/daemons/com.groskleg.plexserverd.out</string>
+	<string>/var/log/services/daemons/com.boot2plex.plexserverd.out</string>
 	<key>UserName</key>
 	<string>_plex</string>
 </dict>
