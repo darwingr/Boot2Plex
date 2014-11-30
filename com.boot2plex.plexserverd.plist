@@ -29,9 +29,9 @@
 		</array>
 	</dict>
 	<key>StandardErrorPath</key>
-	<string>/var/log/services/daemons/com.boot2plex.plexserverd.err</string>
+	<string>/usr/local/plex/Library/Logs/daemons/com.boot2plex.plexserverd.err</string>
 	<key>StandardOutPath</key>
-	<string>/var/log/services/daemons/com.boot2plex.plexserverd.out</string>
+	<string>/usr/local/plex/Library/Logs/daemons/com.boot2plex.plexserverd.out</string>
 	<key>UserName</key>
 	<string>_plex</string>
 </dict>
