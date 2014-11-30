@@ -1,5 +1,6 @@
 #!/bin/bash
 
+launchctl stop com.boot2plex.plexserverd
 launchctl unload /Library/LaunchDaemons/com.boot2plex.plexserverd.plist
 
 cp -f com.boot2plex.plexserverd.plist /Library/LaunchDaemons
