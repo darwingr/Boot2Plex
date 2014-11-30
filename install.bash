@@ -1,8 +1,11 @@
 #!/bin/bash
 
-cp com.plex.pms.plist /Library/LaunchDaemons
+launchctl unload /Library/LaunchDaemons/com.boot2plex.plexserverd.plist
+
+cp -f com.boot2plex.plexserverd.plist /Library/LaunchDaemons
 cd /Library/LaunchDaemons
-chown root:wheel com.plex.pms.plist
-chmod 644 com.plex.pms.plist
-launchctl load com.plex.pms.plist
-launchctl start com.plex.pms
+chown root:wheel com.boot2plex.plexserverd.plist
+chmod 644 com.boot2plex.plexserverd.plist
+
+launchctl load -w com.boot2plex.plexserverd.plist
+launchctl start com.boot2plex.plexserverd
