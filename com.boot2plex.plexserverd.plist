@@ -11,10 +11,6 @@
 		<key>SuccessfulExit</key>
 		<false/>
 	</dict>
-	<key>LimitLoadToSessionType</key>
-	<array>
-		<string>Aqua</string>
-	</array>
 	<key>Label</key>
 	<string>com.boot2plex.plexserverd</string>
 	<key>ProgramArguments</key>
