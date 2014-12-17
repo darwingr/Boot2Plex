@@ -12,9 +12,13 @@ Currently looks for the pms.app is in /Applications
 IMPORTANT
 The project still needs a bit of work and in fact FAILS to load on system startup.
 This is due to the plex menubar item needing the "WindowServer" to be reachable,
-which requires a user to be logged in locally.
+which requires a user to be logged via gui in locally.
 
-For the time being I do the following after my first login after reboot:
+After System Startup (workaround):
+
+1. Log in with any user to gui.
+
+2.
 	10.9 and older
 		sudo launchctl stop com.boot2plex.plexserverd
 		sudo launchctl start com.boot2plex.plexserverd
