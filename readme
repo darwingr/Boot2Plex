@@ -13,17 +13,8 @@ IMPORTANT
 The project still needs a bit of work and in fact FAILS to load on system startup.
 This is due to the plex menubar item needing the "WindowServer" to be reachable,
 which requires a user to be logged via gui in locally.
+My workaround to this is below, following the installation.
 
-After System Startup (workaround):
-
-1. Log in with any user to gui.
-
-2.
-	10.9 and older
-		sudo launchctl stop com.boot2plex.plexserverd
-		sudo launchctl start com.boot2plex.plexserverd
-	10.10 +
-		sudo launchctl kickstart -k system/com.boot2plex.plexserverd
 
 INSTALLATION
 
@@ -34,3 +25,14 @@ chmod +x install.bash
 sudo ./install.bash
 
 Re-run anytime you make edits to the plist.
+
+AFTER SYSTEM STARTUP (workaround):
+
+1. Log in with any user to gui.
+
+2.
+	10.9 and older
+		sudo launchctl stop com.boot2plex.plexserverd
+		sudo launchctl start com.boot2plex.plexserverd
+	10.10 +
+		sudo launchctl kickstart -k system/com.boot2plex.plexserverd
