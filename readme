@@ -22,9 +22,11 @@ For the time being I do the following after my first login after reboot:
 		sudo launchctl kickstart -k system/com.boot2plex.plexserverd
 
 INSTALLATION
-# Change directory (in terminal) where you unzipped or cloned Boot2Plex-master
 
-# makes it executable
+1. Change directory (in terminal) where you unzipped or cloned Boot2Plex-master
+
+2. Run the script
+chmod +x install.bash
 sudo ./install.bash
 
-Run this anytime you make edits to the plist.
+Re-run anytime you make edits to the plist.
