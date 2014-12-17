@@ -13,9 +13,13 @@ IMPORTANT
 The project still needs a bit of work and in fact FAILS to load on system startup.
 This is due to the plex menubar item needing the "WindowServer" to be reachable,
 which requires a user to be logged in locally.
+
 For the time being I do the following after my first login after reboot:
-`sudo launchctl stop com.boot2plex.plexserverd`
-`sudo launchctl start com.boot2plex.plexserverd`
+	10.9 and older
+		sudo launchctl stop com.boot2plex.plexserverd
+		sudo launchctl start com.boot2plex.plexserverd
+	10.10 +
+		sudo launchctl kickstart -k system/com.boot2plex.plexserverd
 
 INSTALLATION
 # Change directory (in terminal) where you unzipped or cloned Boot2Plex-master
