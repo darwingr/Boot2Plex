@@ -1,13 +1,13 @@
 GOAL
-Be able to run plex media server on Mac OS X from system startup as an unpriviledged user.
+	Be able to run plex media server on Mac OS X from system startup as an unpriviledged user.
 
-Primarily avoids need to run as login item on personal account with autologin,
-while accomodating power loss.
+	Primarily avoids need to run as login item on personal account with autologin,
+	while accomodating power loss.
 
 How I am Using This:
-Make a service user-account using the script I have in my other repo [ServiceAccountMaker](https://github.com/darwingr/ServiceAccountMaker).
-enter `$ sudo .mk_service_user.sh plex`
-Currently looks for the pms.app is in /Applications
+	Make a service user-account using the script I have in my other repo [ServiceAccountMaker](https://github.com/darwingr/ServiceAccountMaker).
+	enter `$ sudo .mk_service_user.sh plex`
+	PlexMediaServer.app is in /Applications
 
 IMPORTANT
 The project still needs a bit of work and in fact FAILS to load on system startup.
@@ -18,13 +18,13 @@ My workaround to this is below, following the installation.
 
 INSTALLATION
 
-1. Change directory (in terminal) where you unzipped or cloned Boot2Plex-master
-
-2. Run the script
-chmod +x install.bash
-sudo ./install.bash
-
-Re-run anytime you make edits to the plist.
+	1. 'cd' to the directory (in terminal) where you unzipped or cloned Boot2Plex-master
+	
+	2. Running the script:
+		chmod +x install.bash
+		sudo ./install.bash
+	
+	Re-run anytime you make edits to the plist.
 
 
 AFTER SYSTEM STARTUP (workaround):
