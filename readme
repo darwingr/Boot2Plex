@@ -26,12 +26,12 @@ sudo ./install.bash
 
 Re-run anytime you make edits to the plist.
 
+
 AFTER SYSTEM STARTUP (workaround):
 
 1. Log in with any user to gui.
 
-2.
-	10.9 and older
+2.	10.9 and older
 		sudo launchctl stop com.boot2plex.plexserverd
 		sudo launchctl start com.boot2plex.plexserverd
 	10.10 +
