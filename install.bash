@@ -1,5 +1,14 @@
 #!/bin/bash
 
+version_component() {
+  printf "%s" "$1" |
+    sed -e "s/\./"$'\t'"/g" -e "s/-/"$'\t'"/" |
+    cut -f "$2"
+}
+
+MAC_OS_VERSION="$(sw_vers -productVersion)"
+MAC_OS_MINOR_VERSION="$(version_component "$MAC_OS_VERSION" 2)"
+
 sudo launchctl stop com.boot2plex.plexserverd
 sudo launchctl unload /Library/LaunchDaemons/com.boot2plex.plexserverd.plist
 
