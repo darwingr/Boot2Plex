@@ -15,7 +15,7 @@
 	<string>com.boot2plex.plexserverd</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Applications/Plex Media Server.app/Contents/MacOS/Plex Media Server</string>
+		<string>/usr/local/plex/Applications/Plex Media Server.app/Contents/MacOS/Plex Media Server</string>
 	</array>
 	<key>ProcessType</key>
 	<string>Interactive</string>
