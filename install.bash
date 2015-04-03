@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# is there a way to exec a whole script as root?
+# To avoid repeating sudo, or is that a non-problem
 version_component() {
   printf "%s" "$1" |
     sed -e "s/\./"$'\t'"/g" -e "s/-/"$'\t'"/" |
@@ -21,6 +22,6 @@ if [ "$MAC_OS_MINOR_VERSION" -ge 10 ]; then
 	sudo launchctl enable system/com.boot2plex.plexserverd
 	sudo launchctl kickstart -k system/com.boot2plex.plexserverd
 else
-	launchctl load -w /Library/LaunchDaemons/com.boot2plex.plexserverd.plist
-	launchctl start com.boot2plex.plexserverd
+	sudo launchctl load -w /Library/LaunchDaemons/com.boot2plex.plexserverd.plist
+	sudo launchctl start com.boot2plex.plexserverd
 fi
